@@ -1,0 +1,70 @@
+
+.table
+{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+.table thead
+{
+    background: var(--primary);
+}
+.table thead tr th{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--pure);
+    padding: 1rem;
+    border: 1px solid #dee2e685;
+}
+.table tbody tr td{
+    font-size: 1rem;
+    font-weight: normal;
+    background: var(--secondary);
+    text-align: center;
+    padding: 1rem;
+    color: var(--pure);
+    border: 1px solid #dee2e685;
+}
+
+@media (max-width :768px)
+{
+    .table thead
+    {
+        display: none;
+    }
+    .table , .table tbody , .table tr , .table td{
+        display: block;
+        width: 100%;
+    }
+    .table tr
+    {
+        margin-bottom: 1rem;
+    }
+    .table tbody tr td
+    {
+        text-align: right;
+        padding-left: 2rem;
+        position: relative;
+    }
+    .table td::before
+    {
+        content:  attr( data-lable);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        text-align: left;
+        font-size: 1rem;
+        padding-left: 2rem;
+        font-weight: 600;
+
+    }
+}
+
+
+/* this css for the paginations */
+
+.detials .detialsWrapper .pagination > ul 
+{
+    display: flex;
+    
+}

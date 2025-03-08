@@ -1,0 +1,71 @@
+
+.recentPost
+{
+    background: var(--light);
+    outline: solid black;
+    width: 110%;
+
+}
+.recentPost .recentPostWrapper .recent
+{
+    padding: 1rem ;
+
+}
+.recentPost .recentPostWrapper .recent .recentBox 
+{
+    display: flex;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: var(--pure);
+    outline: solid black;
+}
+.recentPost .recentPostWrapper .recent .recentBox .recentImg 
+{
+    width: 50%;
+    
+}
+.recentPost .recentPostWrapper .recent .recentBox .recentImg img
+{
+  width: 100%;
+  height: 100%x;
+  object-fit: cover;
+}
+
+.recentPost .recentPostWrapper .recent .recentBox .recentContent
+{
+    margin-left: 1rem;
+    width: 70%;
+    
+}
+.recentPost .recentPostWrapper .recent .recentBox .recentContent h6 
+{
+    color: red!important;
+}
+.recentPost .recentPostWrapper .recent .recentBox .recentContent .recentBtn
+{
+    margin-top: 1rem;
+    margin-right: 1rem;
+    text-align: right;
+    
+}
+.recentPost .recentPostWrapper .recent .recentBox .recentContent .recentBtn .recentButton
+{
+    padding: .1rem .2rem;
+    color: var(--pure);
+    background: var(--secondary);
+   
+}
+
+
+.recentPost .recenthHeading 
+{
+    text-transform: uppercase;
+    padding: 1rem 0;
+    padding-left: 6rem;
+    text-align: left;
+    font-size: 2rem;
+    border-radius: 10px;
+    font: italic bold 1.5rem sans-serif;
+    outline-offset: 0.5rem;
+  }
+  

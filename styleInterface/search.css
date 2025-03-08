@@ -1,0 +1,42 @@
+.searchSection 
+{
+  margin: 1rem 0 3rem 0;
+  background-color: var(--light);
+  
+}
+.searchSection .searchInput input 
+{
+  width: 150%;
+  padding: 0.5rem 0;
+  outline: solid black;
+  border: 1px solid rgb(11, 9, 9);
+  transform: translateX(-15%);
+}
+
+.searchSection .searchHeading 
+{
+  text-transform: uppercase;
+  padding: 1rem 0;
+  padding-left: 8rem;
+  text-align: left;
+  font-size: 2rem;
+  border-left: 15px solid var(--secondary);
+  border-radius: 2px;
+  font: italic bold 1.5rem sans-serif;
+  outline-offset: 0.5rem;
+}
+
+.searchSection .searchBtn 
+{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.searchSection .searchBtn
+ {
+
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	text-align: center;
+	border-radius: 63px;
+}

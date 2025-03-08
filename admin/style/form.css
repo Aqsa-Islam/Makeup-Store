@@ -1,0 +1,90 @@
+
+.userForms .inputStyle 
+{
+  text-transform: capitalize;
+  padding-left: 5rem;
+  margin-bottom: 0.4rem;
+}
+.userForms .inputStyle label {
+ 
+  margin: 0.3rem 0;
+}
+.userForms .inputStyle input,
+select {
+  padding: 0.3rem 0;
+  outline: none;
+  border: 1px solid var(--primary);
+  border-radius: 7px;
+}
+.userForms .inputStyle input,
+select {
+  width: 80%;
+}
+.userForms .inputStyle input:hover,
+select:hover {
+  outline: none;
+}
+.formBtn {
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  border: 1px solid var(--pure);
+  margin-left: 5rem;
+  color: var(--pure);
+  border-radius: 7px;
+  background: var(--primary);
+}
+
+/* css for the index pages */
+
+.indexForm .indexFormWrapper {
+  display: flex;
+  padding: 6rem 0;
+  flex-direction: column;
+  align-items: center;
+}
+.indexForm .indexFormWrapper .indexImg img
+{
+    border-radius: 50%;
+}
+
+.indexForm .indexFormWrapper .indexFormForm {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.userindexFormFormForms .inputStyle {
+  text-transform: capitalize;
+  padding-left: 5rem;
+  position: relative;
+  margin-bottom: 0.4rem;
+}
+.indexFormForm .inputStyle label {
+    text-transform: capitalize;
+    text-align: center;
+  
+  margin: 0.3rem 0;
+}
+.indexFormForm .inputStyle input {
+  padding: .6rem 0;
+  outline: none;
+  border: 1px solid var(--primary);
+  border-radius: 7px;
+  width: 150%;
+    transform: translateX(-3rem);
+}
+
+.indexFormForm .inputStyle input:hover,
+select:hover {
+  outline: none;
+}
+.formBtnIndex {
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  border: 1px solid var(--pure);
+  margin-left: 2rem;
+  color: var(--pure);
+  border-radius: 7px;
+  background: var(--primary);
+}

@@ -1,0 +1,39 @@
+body {
+  background: var(--red);
+}
+/* this css for the top bar  */
+.topBar {
+  background: var(--primary);
+}
+.topBar .topBarWrapper {
+  padding: 1rem 0;
+}
+.topBar .topBarWrapper .topBarlogo img {
+  width: 100%;
+  height: 40px;
+  object-fit: cover;
+  /* border-radius: 50%; */
+}
+
+/* this css for the header  */
+.menu {
+  padding: 1rem 0;
+  background: var(--pure);
+}
+.menu .menuWrapper .menuItems a {
+  color: var(--secondary) !important;
+  text-transform: uppercase;
+  margin-right: 2rem;
+}
+.menu .menuWrapper .menuItems a:hover {
+  transition: all 0.2s ease;
+  color: var(--primary);
+}
+
+/* this css for the  user interface*/
+.topBar .topBarWrapper .topBarlogo img 
+{
+  width: 200%;
+  height: 200px; 
+}
+

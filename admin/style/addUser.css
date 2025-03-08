@@ -1,0 +1,28 @@
+
+.userForms img
+{
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    object-fit: contain;
+    padding: 3rem 0;
+}
+.addUsersWrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.usersImg 
+{
+    position: relative;
+}
+.usersImg img
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-30%);
+    width: 60%;
+    margin: auto;
+}

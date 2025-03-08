@@ -1,0 +1,55 @@
+
+.singlePost .singlePostWrapper
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.singlePost .singlePostWrapper .singlePost .singlePostBox .singlePageContent 
+{
+    color: black;
+    padding: 1rem 5rem;
+    margin: 0.5rem;
+    margin-bottom: 0.5rem;
+    height: 150px;
+    width: 600px;
+    background: var(--light);
+   
+}
+.singlePost .singlePostWrapper .singlePost .singlePostBox .singlePageContent h1
+{
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.singlePost .singlePostWrapper .singlePost .singlePostBox .singlePageContent .singlePageContentInfo 
+{
+    display: flex;
+    padding: 1.5rem 0;
+    /* justify-content: space-around; */
+}
+.singlePost .singlePostWrapper .singlePost .singlePostBox .singlePageContent .singlePageContentInfo  li
+{
+
+    list-style-type: none;
+}
+.singlePost .singlePostWrapper .singlePost .singlePostBox .singlePageContent .singlePageContentInfo li a
+{
+    color: var(--secondary);
+    margin-right: 10rem;
+}
+
+.singlePostBox
+{
+    margin: 7rem;
+    background: white; /*single post box light purple*/
+    color: white;
+}
+
+.singlePost .singlePostWrapper .singlePost .singlePostBox .singlePostImg img
+{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    margin: 10px;
+}
+

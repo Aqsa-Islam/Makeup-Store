@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+:root {
+  --primary: #8a47bd;
+  --secondary: #fcee59;
+  --ternary: #6c6c6c;
+  --danger: #fe4545;
+  --pure: #010000;
+  --light: #c48de6;
+  --heaven: #ffffff;
+  --footer: #2d333f;
+}
+
+/* media query for the container  */
+@media (min-width: 576px) 
+{
+  .container 
+  {
+    max-width: 540px;
+    margin: auto;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1152px;
+    margin: auto;
+  }
+}
+
+/* THIS IS CUSTOME PROPERTIES FOR THE ALL ANCHER TAGS */
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--pure);
+}
+
+/* this is the properties for the Flex */
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.flex-1 {
+  flex: 1;
+}
+
+.flex-col
+{
+  flex-direction: column;
+
+}
+
+
+li{
+  text-decoration: none;
+  list-style: none;
+}
+
+/* this is use for align the text center */
+.text-center {
+  text-align: center;
+}
+.text-left
+{
+  text-align: left;
+}
+
+/* this css for the button */
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  background: transparent;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--pure);
+  border-radius: 3px;
+  transition: all 0.4s ease;
+}
+.btn-primary:hover {
+  background: var(--secondary);
+}

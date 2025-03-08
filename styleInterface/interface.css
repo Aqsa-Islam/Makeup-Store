@@ -1,0 +1,399 @@
+.interFace {
+  background: var(--primary);
+}
+.interFace .interFaceWrapper .interFaceLogo {
+  margin: 1rem 0;
+}
+.interFace .interFaceWrapper .interFaceLogo img {
+  width: 100%;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 25%;
+}
+
+/* this css for the header  */
+.menu 
+{
+  padding: 2rem 0;
+  background: var(--secondary);
+}
+.menu .menuWrapper .menuItems a 
+{
+  color: var(--pure) !important;
+  text-transform: uppercase;
+  margin-right: 2rem;
+}
+.menu .menuWrapper .menuItems a:hover {
+  transition: all 0.2s ease;
+  color: var(--primary);
+}
+
+/* this css for the display */
+.display {
+  margin-top: 1rem;
+}
+.display .searchHeading h1 
+{
+
+  width: 20%;
+  font-size: 5rem;
+  border-bottom: 1px solid var(--secondary);
+  border-collapse: separate;
+  border-spacing: 15px 50px;
+}
+.display .displayWrapper
+{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+/* this css for the post seciont  */
+.display .displayWrapper .post 
+{
+
+  margin: 2rem;
+}
+.display .displayWrapper .post .postBox 
+{
+  display: flex;
+  margin-bottom: 1rem;
+  background: var(--light);
+  outline: solid black;
+  border-bottom: 1px solid rgb(160, 145, 145);
+}
+.display .displayWrapper .post .postBox .postImg 
+{
+  width: 30%;
+  margin-right: 1rem;
+}
+.display .displayWrapper .post .postBox .postImg img 
+{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.display .displayWrapper .post .postBox .postContent 
+{
+  width: 70%;
+  /* background: white; */
+  padding: 1rem 2rem;
+
+  /* margin-left: 2rem; */
+}
+.display .displayWrapper .post .postBox .postContent h2 a 
+{
+  color: var(--secondary);
+}
+.display .displayWrapper .post .postBox .postBtn {
+  margin: 1rem 0;
+}
+.display .displayWrapper .post .postBox .postContent .postInnerInfo {
+  display: flex;
+  padding: 0.5rem 0;
+  /* justify-content: space-around; */
+}
+.display .displayWrapper .post .postBox .postContent .postInnerInfo li {
+  list-style-type: none;
+}
+.display .displayWrapper .post .postBox .postContent .postInnerInfo li a {
+  color: var(--secondary);
+  margin-right: 3rem;
+}
+
+/* this is pagination css */
+.pagination .paginationWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-15%);
+}
+.pagination .paginationWrapper li {
+  list-style: none;
+}
+
+.pagination .paginationWrapper .paginationLink {
+  margin-right: 1rem;
+}
+.pagination .paginationWrapper .paginationLink.active a {
+  color: var(--pure);
+  background: var(--secondary);
+  padding: 1rem;
+}
+.pagination .paginationWrapper .paginationLink a {
+  color: var(--pure);
+  background: var(--primary);
+  padding: 1rem;
+}
+
+/* THIS CSS FOR THE FOOTER SECTION */
+
+.footer .footerWrapper 
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer {
+  background: var(--secondary);
+  /* text-align: center; */
+  margin-top: 6rem;
+}
+.footer .footerWrapper .footerLogo img {
+  width: 100%;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.footer .footerWrapper .footerItems {
+  text-transform: uppercase;
+}
+.footer .footerWrapper .footerItems a {
+  margin-right: 10rem;
+}
+.footer .footerWrapper .footerItems a:hover {
+  color: var(--primary);
+}
+@media (max-width: 992px)
+{
+  .display .displayWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .display .displayWrapper .sideBar {
+    margin-top: 4rem;
+  }
+  .pagination {
+    position: relative;
+    /* display: none; */
+  }
+  .pagination .paginationWrapper {
+    position: absolute;
+    top: -900px;
+    transform: translateY();
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .footer {
+    padding: 3rem 0;
+  }
+  .footer .footerWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer .footerWrapper .footerItems {
+    display: flex;
+    margin: 1rem 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateX(14px);
+    text-align: left;
+  }
+  .footer .footerWrapper .footerItems a {
+    margin-bottom: 1rem;
+   
+  }
+}
+@media (max-width: 769px) {
+  .display .displayWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .display .displayWrapper .post .postBox .postContent h2 a {
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: 800;
+  }
+  .display .displayWrapper .post .postBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    background: var(--light);
+    border-bottom: 1px solid rgb(160, 145, 145);
+  }
+  .display .displayWrapper .post .postBox .postContent {
+    width: 100%;
+    /* background: white; */
+    padding: 1rem 2rem;
+    /* margin-left: 2rem; */
+  }
+  .display .displayWrapper .post .postBox .postImg {
+    width: 100%;
+    margin-right: 1rem;
+  }
+  .display .displayWrapper .sideBar {
+    margin-top: 4rem;
+  }
+
+  .pagination {
+    position: relative;
+    /* display: none; */
+  }
+  .pagination .paginationWrapper {
+    position: absolute;
+    top: -900px;
+    transform: translateY();
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .footer {
+    padding: 3rem 0;
+  }
+  .footer .footerWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer .footerWrapper .footerItems {
+    display: flex;
+    margin: 1rem 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateX(14px);
+    text-align: left;
+  }
+  .footer .footerWrapper .footerItems a 
+  {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 576px)
+{
+  .display .displayWrapper 
+  {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .display .displayWrapper .post .postBox {
+    flex-direction: column;
+    gap: 0;
+  }
+  .display .displayWrapper .post .postBox .postImg {
+    width: 100%;
+    margin: 0;
+  }
+  .display .displayWrapper .post .postBox .postContent {
+    width: 100%;
+  }
+  .display .displayWrapper .sideBar {
+    margin-top: 4rem;
+  }
+  .pagination 
+  {
+    position: relative;
+    /* display: none; */
+  }
+  .pagination .paginationWrapper {
+    position: absolute;
+    top: -816px;
+    transform: translateY();
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  /* this css for the footer section */
+  .footer {
+    padding: 3rem 0;
+  }
+  .footer .footerWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer .footerWrapper .footerItems {
+    display: flex;
+    margin: 1rem 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateX(14px);
+    text-align: left;
+  }
+  .footer .footerWrapper .footerItems a {
+    margin-bottom: 1rem;
+    /* transform: translateX(20%); */
+  }
+  /* this css fot the category page */
+  .display .displayWrapper .post {
+    margin: 0;
+  }
+}
+@media (max-width: 480px) {
+  .display .displayWrapper {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+  }
+  .pagination {
+    position: relative;
+    /* display: none; */
+  }
+  .pagination .paginationWrapper {
+    position: absolute;
+    top: -850px;
+    transform: translateY();
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .footer {
+    padding: 3rem 0;
+  }
+  .footer .footerWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer .footerWrapper .footerItems {
+    display: flex;
+    margin: 1rem 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateX(14px);
+    text-align: left;
+  }
+  .footer .footerWrapper .footerItems a {
+    margin-bottom: 1rem;
+    /* transform: translateX(20%); */
+  }
+
+  /* this css for menu */
+  .menu .menuWrapper .menuItems {
+    background-color: var(--secondary);
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  .singlePost .singlePostWrapper
+  {
+
+    grid-template-columns: 1fr;
+  }
+  .singlePost .singlePostWrapper .singlePost
+  {
+    margin: 0;
+    padding: 0;
+  }
+   .singlePost .singlePostWrapper .singlePost .singlePostBox
+  {
+    margin: 0;
+    padding: 0;
+  }
+  .singlePost .singlePostWrapper .singlePost .singlePostBox .singlePostImg
+  {
+    padding: 1rem;
+  }
+  .singlePost .singlePostWrapper .singlePost .singlePostBox .singlePageContent
+  {
+    /* display: none; */
+    margin: 0;
+    padding: .5rem;
+  }
+}
